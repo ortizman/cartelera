@@ -6,7 +6,7 @@
 
 para generar el WAR y correrlo desde un conteiner web, o directamente desde eclipse
 
-# StartUp del frontend
+# Start up del frontend
 
 Cualquier file server. Ejemplo: Apache, nginx, tomcat, etc. Yo uso live-server( npm install live-server -g ) y se levanta desde consola, ubicado en la carpeta **/app** del proyecto y ejecutando `live-server --port=8181`
 
