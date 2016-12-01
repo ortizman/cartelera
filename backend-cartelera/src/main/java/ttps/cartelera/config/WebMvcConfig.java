@@ -22,7 +22,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	public void addCorsMappings(CorsRegistry registry) {
 		registry
 		.addMapping("/api/**")
-		.allowedOrigins("http://localhost:8181")
+		.allowedOrigins("http://localhost:8181", "127.0.0.1:8181", "127.0.1.1:8181")
 		.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD");
+		
 	}
 }

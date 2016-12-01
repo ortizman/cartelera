@@ -64,9 +64,15 @@ public class TokenSecurityFilter implements Filter {
 			throws IOException, ServletException {
 
 		HttpServletRequest req = (HttpServletRequest) request;
-		String path = req.getRequestURI().substring(req.getRequestURI().length() - 6);
+		String[] splitPath = req.getRequestURI().split("/");
+		
+		String path = "";
+		
+		if(splitPath.length > 0) {
+			path = splitPath[splitPath.length -1];
+		}
 
-		if ("/login".equals(path)) {
+		if ("login".equals(path) || "usuarios".equals(path)) {
 			// sigue la cadena de ejecucion hacia el login
 			chain.doFilter(req, response);
 		} else {
