@@ -1,0 +1,26 @@
+
+<!--Fuentes online para el navegador -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="fluid-container">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+      <div class="form-login">
+        <h4>Autenticate!</h4>
+
+        <div ng-if="loginErrorMessage" class="alert alert-danger" role="alert">
+          <small ng-bind="loginErrorMessage"></small>
+        </div>
+        <input type="text" id="userName" ng-model="username" class="form-control input-sm chat-input" placeholder="Login de Usuario" />
+      </br>
+      <input type="text" id="userPassword" ng-model="password" class="form-control input-sm chat-input" placeholder="Contraseña" />
+      </br>
+      <div class="wrapper">
+        <span class="group-btn">
+          <a href="" ng-click="login()" class="btn btn-primary btn-md">Inregs&aacute; <i class="fa fa-sign-in"></i></a>
+        </span>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
