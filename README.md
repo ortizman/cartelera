@@ -5,6 +5,7 @@
 ```
 
 para generar el WAR y correrlo desde un conteiner web, o directamente desde eclipse
+**Nota: ** Puerto por defecto 8080, si se cambia el puerto, cambiar también el archivo de `environment.js` en el frontend
 
 # Start up del frontend
 
